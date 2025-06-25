@@ -67,7 +67,7 @@ A modern hotel & travel booking platform with a beautiful, intuitive UI — insp
 
 ## 🌐 Live Demo
 
-> _Coming soon!_
+[\[> _Coming soon!_\](https://booking-com-ten-sepia.vercel.app/)](https://booking-com-ten-sepia.vercel.app/)
 
 ---
 
@@ -81,7 +81,7 @@ Contributions are welcome! Please fork the repo and submit a pull request.
 
 - **Design & Development:** [Your Name]
 - **Inspired by:** Booking.com, modern travel UIs
-- **Contact:** your.email@example.com
+- **Contact:** samimhossainsujon@gmail.com
 
 ---
 

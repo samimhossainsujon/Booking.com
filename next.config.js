@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // output: "export", // Removed to allow client components with dynamic routes
-  distDir: "dist",
   images: {
     unoptimized: true,
     domains: [],
