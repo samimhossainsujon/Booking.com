@@ -67,7 +67,7 @@ A modern hotel & travel booking platform with a beautiful, intuitive UI — insp
 
 ## 🌐 Live Demo
 
-[\[(https://booking-com-ten-sepia.vercel.app/)](https://booking-com-ten-sepia.vercel.app/)
+[(https://booking-com-ten-sepia.vercel.app/)](https://booking-com-ten-sepia.vercel.app/)
 
 ---
 
