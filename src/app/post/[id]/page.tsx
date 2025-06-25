@@ -7,15 +7,15 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
-import { 
-  ArrowLeft, 
-  Heart, 
-  Share, 
-  Star, 
-  MapPin, 
-  Clock, 
-  Eye, 
-  User, 
+import {
+  ArrowLeft,
+  Heart,
+  Share,
+  Star,
+  MapPin,
+  Clock,
+  Eye,
+  User,
   Calendar,
   ThumbsUp,
   MessageSquare,
@@ -74,13 +74,6 @@ const categories = [
   { id: 'adventure', name: 'Adventure Hotels', color: 'bg-red-500' },
 ];
 
-// Required function for static export
-export async function generateStaticParams() {
-  return Object.keys(postData).map((id) => ({
-    id: id,
-  }));
-}
-
 export default function PostDetail() {
   const params = useParams();
   const router = useRouter();
@@ -111,7 +104,7 @@ export default function PostDetail() {
   const handleShare = (platform: string) => {
     const url = window.location.href;
     const text = post.title;
-    
+
     switch (platform) {
       case 'twitter':
         window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`);
@@ -129,11 +122,11 @@ export default function PostDetail() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
       <Header />
-      
+
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Back Button */}
-        <Button 
-          variant="ghost" 
+        <Button
+          variant="ghost"
           className="mb-6 hover:bg-gray-100 dark:hover:bg-gray-800"
           onClick={() => router.back()}
         >
@@ -263,7 +256,7 @@ export default function PostDetail() {
             {/* Article Content */}
             <Card className="mb-8 dark:bg-gray-800 dark:border-gray-700">
               <CardContent className="p-8">
-                <div 
+                <div
                   className="prose prose-lg max-w-none dark:prose-invert prose-headings:text-gray-900 dark:prose-headings:text-white prose-p:text-gray-700 dark:prose-p:text-gray-300"
                   dangerouslySetInnerHTML={{ __html: post.content }}
                 />
